@@ -1,0 +1,25 @@
+{
+  "name": "advanced-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/machaaouri/advanced-typescript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/machaaouri/advanced-typescript/issues"
+  },
+  "homepage": "https://github.com/machaaouri/advanced-typescript#readme",
+  "devDependencies": {
+    "typescript": "^3.3.1"
+  }
+}

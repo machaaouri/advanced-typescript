@@ -21,3 +21,8 @@ export function ex2 () {
     console.log(title);
     console.log(author);
 }
+
+export function mainDestructuring() {
+    ex1();
+    ex2();
+}

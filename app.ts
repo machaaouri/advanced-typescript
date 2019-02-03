@@ -4,6 +4,7 @@ import * as Union  from './features/union'
 import {UniversityLibrarian} from "./classes"
 import  './features/librarianExtension';
 import  * as Callback from "./async/callback"
+import  * as Promise from "./async/promise"
 
 // Destructuring arrays and objects
 Destructuring.mainDestructuring();
@@ -17,3 +18,6 @@ newLibrarian.hostSeminar("TypeScript");
 
 // Callbacks
 Callback.MainCallback();
+
+// Promise
+Promise.MainPromise();

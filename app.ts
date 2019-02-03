@@ -5,6 +5,7 @@ import {UniversityLibrarian} from "./classes"
 import  './features/librarianExtension';
 import  * as Callback from "./async/callback"
 import  * as Promise from "./async/promise"
+import  * as Asyns from "./async/async_await"
 
 // Destructuring arrays and objects
 Destructuring.mainDestructuring();
@@ -21,3 +22,6 @@ Callback.MainCallback();
 
 // Promise
 Promise.MainPromise();
+
+// Async/Await
+Asyns.MainAsync();

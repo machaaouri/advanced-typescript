@@ -36,7 +36,12 @@ const array = [1, 'test', 2, true, 3]
 type test04 = ArrayInfer<typeof array>
 
 // Extract types from a tuple
-type TupleInfer<T> = T extends [infer A, ...(infer B)[]] ? [A, B] : never
-type test22 = TupleInfer<[string, number, boolean]>
+type TupleInfer<T> = T extends (infer B)[] ? B : never
+type test22 = TupleInfer<[string, number, boolean, string]>
 
-//declare function CurryV01<P extends any[], R>(f:(...args: P) => R): CurryV01<P,R>
+// Curry type that takes a tuple of parameters P and a return type R
+type Curry01<P extends any[], R> = (args: Head<P>) => HasTail<P> extends true ? Curry01<Tail<P>,R> : R
+declare function curry01<P extends any[], R>(f:(...args: P) => R): Curry01<P,R>
+
+const toCurry = curry01(fn00)
+const testCurry = toCurry("houssame")(29)(true)
